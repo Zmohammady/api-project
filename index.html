@@ -1,0 +1,51 @@
+<html>
+    <head>
+         <meta charset="UTF-8" />
+         <meta name="viewport" contetnt="width=device-width , initial-scale=1.0" />
+         <meta http-equiv="X-UA-Compatible"
+         content="ie=edge" />
+         <link rel="stylesheet" href="style.css" />
+         
+         <title>Weather</title>
+
+         <header>
+            <input type="checkbox" id="menyAvPaa">
+            <label id="burger" for="menyAvPaa">
+              <div></div>
+                <div></div>
+                <div></div>
+            </label>
+          <nav id="meny">
+            <a href="#" onclick="CurLoc();">Current Location</a>
+            <a href="#" onclick="NY();">New York</a>
+            <a href="#" onclick="vancouver();">Vancouver</a>
+            <a href="#" onclick="london();">London</a>
+            <a href="#" onclick="tokyo();">Tokyo</a>
+          </nav>
+        </header>
+    </head>
+    <body>
+      <div style="width: 150px;" >
+    
+        <div class="location">
+            <h1 class="location-timezone">Timezone</h1>
+            <canvas class="icon" width="128" height="128"></canvas>
+        </div>
+        <div class="temperature">
+            <div class="degree-section">
+            <h2 class="temperature-degree"> - </h2>
+            <span>C </span>
+            </div>
+            <div class="temperature-description"><h1>-</h1></div>
+        </div> 
+        <!-- <div class="hw">  -->
+            <span>Humidity:</span><div><h2 class="humidity-d">-</h2></div>
+            <span>Wind speed:</span><div><h2 class="windspeed">-</h2><p>km</p></div>
+        <!-- </div>   -->
+ 
+       </div>   
+  
+     <script src="skycons.js"></script> 
+     <script src="app.js"></script>
+    </body>
+</html>
